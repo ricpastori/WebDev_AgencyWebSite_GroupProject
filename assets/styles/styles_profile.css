@@ -120,6 +120,17 @@
   color: var(--color-white);
 }
 
+.socialIcon {
+  display: block;
+  transition: filter var(--transition-base);
+  width: 20px;
+  height: 20px;
+}
+
+.socialLinks a:hover .socialIcon {
+  filter: brightness(0) invert(1);
+}
+
 .introPanel {
   color: var(--color-text-dark);
 }

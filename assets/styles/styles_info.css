@@ -34,7 +34,16 @@ main {
 }
 
 .contact-item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
   font-weight: bold;
+}
+
+.contact-item img {
+  flex: 0 0 auto;
+  width: 18px;
+  height: 18px;
 }
 
 @media (max-width: 900px) {
