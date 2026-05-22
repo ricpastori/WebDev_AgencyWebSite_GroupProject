@@ -6,24 +6,24 @@ Il progetto e composto da piu pagine HTML collegate tra loro tramite una navigaz
 
 ## Pagine principali
 
-- `html/Homepage.html`: pagina iniziale con introduzione al portfolio aziendale.
-- `html/Info.html`: pagina contatti con form, informazioni e immagine illustrativa.
-- `html/Prodotti.html`: catalogo dei prodotti/servizi offerti dall'agenzia.
-- `html/Developer.html`: elenco dei membri del team con link alle pagine personali.
-- `html/riccardo.html`, `html/Donnarumma.html`, `html/marianna.html`, `html/DavideBraghi.html`: pagine profilo dei developer.
+- `index.html`: pagina iniziale con introduzione al portfolio aziendale.
+- `pages/Info.html`: pagina contatti con form, informazioni e immagine illustrativa.
+- `pages/Prodotti.html`: catalogo dei prodotti/servizi offerti dall'agenzia.
+- `pages/Developer.html`: elenco dei membri del team con link alle pagine personali.
+- `pages/riccardo.html`, `pages/Donnarumma.html`, `pages/marianna.html`, `pages/DavideBraghi.html`: pagine profilo dei developer.
 
 ## Struttura
 
-- `css/`: fogli di stile generali e specifici per pagina.
-- `html/`: pagine del sito.
-- `images/`: immagini e avatar usati nelle pagine.
-- `icons/`: icone e illustrazioni SVG.
-- `pdf/`: CV dei membri del team.
-- `js/`: script JavaScript condivisi.
+- `assets/styles/`: fogli di stile generali e specifici per pagina.
+- `pages/`: pagine interne del sito.
+- `assets/images/`: immagini e avatar usati nelle pagine.
+- `assets/icons/`: icone e illustrazioni SVG.
+- `assets/pdf/`: CV dei membri del team.
+- `assets/scripts/`: script JavaScript condivisi.
 
 ## Come aprire il sito
 
-Aprire `html/Homepage.html` nel browser e navigare tra le pagine usando il menu in alto.
+Aprire `index.html` nel browser e navigare tra le pagine usando il menu in alto.
 
 ## TODO e sviluppi futuri
 
