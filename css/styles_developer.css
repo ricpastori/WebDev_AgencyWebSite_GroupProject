@@ -111,7 +111,13 @@ footer > p {
 }
 
 @media (max-width: 768px) {
-  .sectionCard {
+  .cardSection {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 481px) {
+  .cardSection {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
