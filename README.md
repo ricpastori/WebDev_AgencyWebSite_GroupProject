@@ -7,10 +7,10 @@ Il progetto e composto da piu pagine HTML collegate tra loro tramite una navigaz
 ## Pagine principali
 
 - `index.html`: pagina iniziale con introduzione al portfolio aziendale.
-- `pages/Info.html`: pagina contatti con form, informazioni e immagine illustrativa.
-- `pages/Prodotti.html`: catalogo dei prodotti/servizi offerti dall'agenzia.
-- `pages/Developer.html`: elenco dei membri del team con link alle pagine personali.
-- `pages/riccardo.html`, `pages/Donnarumma.html`, `pages/marianna.html`, `pages/DavideBraghi.html`: pagine profilo dei developer.
+- `pages/info.html`: pagina contatti con form, informazioni e immagine illustrativa.
+- `pages/prodotti.html`: catalogo dei prodotti/servizi offerti dall'agenzia.
+- `pages/developer.html`: elenco dei membri del team con link alle pagine personali.
+- `pages/riccardo_pastori.html`, `pages/davide_donnarumma.html`, `pages/marianna_masala.html`, `pages/davide_braghi.html`: pagine profilo dei developer.
 
 ## Struttura
 
