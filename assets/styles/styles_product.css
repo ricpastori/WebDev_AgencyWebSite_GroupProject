@@ -4,6 +4,77 @@ main {
 
 .cardSection {
   grid-template-columns: repeat(3, 1fr);
+  align-items: stretch;
+}
+
+.card {
+  overflow: hidden;
+  min-width: 0;
+  padding: 0;
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card .imgContainer {
+  order: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  margin: 0;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  box-shadow: none;
+  border-radius: 0;
+  background-color: rgb(255 255 255 / 16%);
+}
+
+.card .imgItself {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  object-fit: cover;
+}
+
+.card > h3,
+.card .btnAdditionalInfo {
+  margin-right: var(--space-lg);
+  margin-left: var(--space-lg);
+}
+
+.card > h3 {
+  margin-top: var(--space-lg);
+  min-height: auto;
+  text-align: left;
+}
+
+.cardSubtitle {
+  box-sizing: border-box;
+  margin: var(--space-xs) 0 0;
+  padding: 0 var(--space-lg);
+  text-align: left;
+}
+
+.cardDescription {
+  box-sizing: border-box;
+  margin: var(--space-md) 0 0;
+  padding: 0 var(--space-lg) var(--space-sm);
+  line-height: 1.6;
+}
+
+.card .btnAdditionalInfo {
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-lg);
+  padding: var(--space-sm) var(--space-md);
 }
 
 @media (max-width: 768px) {
