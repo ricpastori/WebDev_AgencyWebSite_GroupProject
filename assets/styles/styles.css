@@ -93,6 +93,17 @@
   box-sizing: border-box;
 }
 
+.srOnly {
+  position: absolute;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
 body {
   margin: 0 auto;
   background: var(--gradient-page);
@@ -114,7 +125,7 @@ main {
   padding: var(--space-lg);
 }
 
-nav {
+#navContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -131,6 +142,15 @@ nav {
   font-size: var(--font-size-page-lead);
   text-decoration: none;
   text-shadow: var(--shadow-text);
+}
+
+.headerMenu {
+  position: relative;
+}
+
+.menuCheckbox,
+.menuToggle {
+  display: none;
 }
 
 .navLinks {
@@ -317,20 +337,157 @@ textarea {
   color: var(--color-white);
 }
 
-footer {
-  align-content: center;
+.siteFooter {
   box-shadow: var(--shadow-main);
   background-color: var(--color-primary);
-  height: var(--footer-height);
+  padding: var(--space-xl) var(--space-lg) var(--space-md);
   color: var(--color-white);
-  text-align: center;
 }
 
-footer > p {
+.footerGrid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: var(--space-xl);
+  width: min(var(--site-width), 100%);
+  margin: 0 auto;
+}
+
+.footerBrand h2,
+.footerMenu h3,
+.footerContacts h3 {
+  margin: 0 0 var(--space-sm);
+  color: var(--color-white);
+  text-shadow: var(--shadow-text);
+}
+
+.footerBrand p,
+.footerContacts p,
+.footerCopyright {
   margin: 0;
 }
 
-footer > p > strong {
+.footerBrand p,
+.footerContacts p {
+  color: var(--color-white);
+  font-size: var(--font-size-text);
+  font-style: normal;
+  line-height: 1.45;
+  text-shadow: none;
+}
+
+.footerMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-xs);
+}
+
+.footerMenu a {
+  color: var(--color-white);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footerMenu a:hover {
+  text-decoration: underline;
+  text-underline-offset: var(--space-2xs);
+}
+
+.footerCopyright {
+  width: min(var(--site-width), 100%);
+  margin: var(--space-xl) auto 0;
+  border-top: 1px solid var(--color-surface-border);
+  padding-top: var(--space-md);
+  text-align: center;
+}
+
+.footerCopyright strong {
   color: var(--color-accent-muted);
   text-shadow: 2px 2px 5px var(--color-black);
+}
+
+@media (max-width: 768px) {
+  #navContainer {
+    align-items: center;
+  }
+
+  .menuToggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    box-shadow: var(--shadow-main);
+    border: 1px solid var(--color-surface-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-accent);
+    padding: var(--space-sm);
+    width: 44px;
+    height: 44px;
+  }
+
+  .menuCheckbox {
+    display: block;
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    pointer-events: none;
+  }
+
+  .menuCheckbox:focus-visible + .menuToggle {
+    outline: 3px solid var(--color-accent-light);
+    outline-offset: 3px;
+  }
+
+  .menuToggle span:not(.srOnly) {
+    display: block;
+    transition:
+      transform var(--transition-base),
+      opacity var(--transition-base);
+    background: var(--color-white);
+    width: 20px;
+    height: 4px;
+  }
+
+  .menuCheckbox:checked + .menuToggle span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .menuCheckbox:checked + .menuToggle span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menuCheckbox:checked + .menuToggle span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .navLinks {
+    display: none;
+    position: absolute;
+    top: calc(100% + var(--space-md));
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    box-shadow: var(--shadow-main);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-primary);
+    padding: var(--space-md);
+    width: min(220px, calc(100vw - 32px));
+    z-index: 30;
+  }
+
+  .menuCheckbox:checked ~ .navLinks {
+    display: flex;
+  }
+
+  .navLinks a {
+    text-align: center;
+  }
+
+  .footerGrid {
+    grid-template-columns: 1fr;
+  }
 }

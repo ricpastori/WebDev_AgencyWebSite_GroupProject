@@ -12,10 +12,19 @@
     <header>
       <nav id="navContainer">
         <a class="agencyBrand" href="../index.html">CodeNexa</a>
-        <div class="navLinks">
-          <a href="./Info.html">Info</a>
-          <a href="./Prodotti.html">Prodotti</a>
-          <a href="./Developer.html">Developer</a>
+        <div class="headerMenu">
+          <input class="menuCheckbox" type="checkbox" id="main-menu-toggle" />
+          <label class="menuToggle" for="main-menu-toggle" aria-label="Apri il menu principale">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="srOnly">Menu</span>
+          </label>
+          <div class="navLinks" aria-label="Menu principale">
+            <a href="./Info.html">Info</a>
+            <a href="./Prodotti.html">Prodotti</a>
+            <a href="./Developer.html">Developer</a>
+          </div>
         </div>
       </nav>
     </header>
@@ -32,7 +41,7 @@
             </div>
             <h1>Riccardo Pastori</h1>
             <span class="cardDivider"></span>
-            <p class="profileRole">Project Manager</p>
+            <p class="profileRole">Product & Designer Engineer</p>
           </div>
 
           <div class="followBar">
@@ -91,11 +100,33 @@
       </section>
     </main>
 
-    <footer>
-      <p>
-        All right reserved to ProDeveloperGroup &copy;
-        <strong id="year"></strong>
+    <footer class="siteFooter">
+      <div class="footerGrid">
+        <section class="footerBrand">
+          <h2>CodeNexa</h2>
+          <p>Soluzioni web creative per idee digitali che crescono.</p>
+        </section>
+
+        <nav class="footerMenu" aria-label="Menu footer">
+          <h3>Menu</h3>
+          <a href="../index.html">Homepage</a>
+          <a href="./Info.html">Info</a>
+          <a href="./Prodotti.html">Prodotti</a>
+          <a href="./Developer.html">Developer</a>
+        </nav>
+
+        <section class="footerContacts">
+          <h3>Contatti</h3>
+          <p>Via Roma 123, Milano</p>
+          <p>+39 333 1234567</p>
+          <p>info@codenexa.it</p>
+        </section>
+      </div>
+
+      <p class="footerCopyright">
+        All right reserved to CodeNexa &copy; <strong id="year"></strong>
       </p>
     </footer>
+  <script src="../assets/scripts/footer.js"></script>
   </body>
 </html>

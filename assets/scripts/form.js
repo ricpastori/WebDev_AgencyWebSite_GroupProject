@@ -31,9 +31,3 @@ document.addEventListener("DOMContentLoaded", () => {
 		form.reset();
 	});
 });
-
-// Footer dinamico
-
-const dataYearFooter = document.getElementById("year");
-
-dataYearFooter.textContent = new Date().getFullYear();

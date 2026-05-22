@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Team CodeNexa</title>
     <link rel="stylesheet" href="../assets/styles/styles.css" />
     <link rel="stylesheet" href="../assets/styles/styles_developer.css" />
   </head>
@@ -11,76 +11,129 @@
     <header>
       <nav id="navContainer">
         <a class="agencyBrand" href="../index.html">CodeNexa</a>
-        <div class="navLinks">
-          <a href="./Info.html">Info</a>
-          <a href="./Prodotti.html">Prodotti</a>
-          <a href="./Developer.html">Developer</a>
+        <div class="headerMenu">
+          <input class="menuCheckbox" type="checkbox" id="main-menu-toggle" />
+          <label class="menuToggle" for="main-menu-toggle" aria-label="Apri il menu principale">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="srOnly">Menu</span>
+          </label>
+          <div class="navLinks" aria-label="Menu principale">
+            <a href="./Info.html">Info</a>
+            <a href="./Prodotti.html">Prodotti</a>
+            <a href="./Developer.html">Developer</a>
+          </div>
         </div>
       </nav>
     </header>
-    <main id="mainContainer">
-      <p>Qui potrete ammirare i nostri favolosi Devs!</p>
-      <section class="cardSection">
-        <!-- Card -->
-        <div class="card">
+    <main id="mainContainer" class="developerMain">
+      <section class="developerIntro">
+        <p class="introKicker">Il nostro team</p>
+        <h1>Team CodeNexa</h1>
+        <p>
+          Quattro profili diversi, un unico obiettivo: progettare esperienze web
+          chiare, curate e pronte a crescere.
+        </p>
+      </section>
+
+      <section class="cardSection" aria-label="Membri del team CodeNexa">
+        <article class="card teamCard">
+          <div class="imgContainer teamAvatarContainer">
+            <img
+              class="imgItself"
+              src="../assets/images/marianna-masala.png"
+              alt="Illustrazione 3D di Marianna Masala"
+            />
+          </div>
           <h3>Marianna Masala</h3>
           <p class="cardSubtitle">Software Developer</p>
-          <div class="imgContainer">
-            <img class="imgItself" src="../assets/images/images.jpg" alt="" />
-          </div>
           <p class="cardDescription">
-            Specializzata nello sviluppo di applicazioni web, desktop e mobile.
-Lavora con il team di CodeNexa traducendo i requisiti aziendali in soluzioni digitali efficienti, veloci e integrate.
+            Sviluppa applicazioni web, desktop e mobile traducendo i requisiti
+            del progetto in soluzioni digitali efficienti, veloci e integrate.
           </p>
-          <a class="btnAdditionalInfo" href="marianna.html">Maggiori info</a></button>
-        </div>
-        <!-- Card -->
-        <div class="card">
+          <a class="btnAdditionalInfo" href="./marianna.html">Maggiori info</a>
+        </article>
+
+        <article class="card teamCard">
+          <div class="imgContainer teamAvatarContainer">
+            <img
+              class="imgItself"
+              src="../assets/images/davide-donnarumma.png"
+              alt="Illustrazione 3D di Davide Donnarumma"
+            />
+          </div>
           <h3>Davide Donnarumma</h3>
-          <p class="cardSubtitle">Sviluppatore Web Front-End</p>
-          <div class="imgContainer">
-            <img class="imgItself" src="../assets/images/images.jpg" alt="" />
-          </div>
+          <p class="cardSubtitle">Front-End Developer</p>
           <p class="cardDescription">
-            
-Con una forte passione per il mondo delle tecnologie digitali.
-Collabora con il team di CodeNexa dedicandosi alla creazione di interfacce utente intuitive e alla scrittura di codice pulito.
+            Cura interfacce intuitive e codice pulito, con attenzione alla
+            struttura, all'usabilità e alla resa visiva delle pagine.
           </p>
-          <a class="btnAdditionalInfo" href="Donnarumma.html">Maggiori info</a></button>
-        </div>
-        <!-- Card -->
-        <div class="card">
+          <a class="btnAdditionalInfo" href="./Donnarumma.html">Maggiori info</a>
+        </article>
+
+        <article class="card teamCard">
+          <div class="imgContainer teamAvatarContainer">
+            <img
+              class="imgItself"
+              src="../assets/images/riccardo-pastori.png"
+              alt="Illustrazione 3D di Riccardo Pastori"
+            />
+          </div>
           <h3>Riccardo Pastori</h3>
-          <p class="cardSubtitle">Project Manager</p>
-          <div class="imgContainer">
-            <img class="imgItself" src="../assets/images/images.jpg" alt="" />
-          </div>
+          <p class="cardSubtitle">Product & Designer Engineer</p>
           <p class="cardDescription">
-           Product designer orientato al mondo del web development.
-Lavora nel team di CodeNexa con l'obiettivo di trasformare idee in interfacce utente chiare, veloci, intuitive e coerenti.
+            Coordina idee, priorità e interfacce per trasformare concept e
+            bisogni utente in pagine chiare, coerenti e facili da navigare.
           </p>
-          <a class="btnAdditionalInfo" href="riccardo.html">Maggiori info</a></button>
-        </div>
-        <!-- Card -->
-        <div class="card">
+          <a class="btnAdditionalInfo" href="./riccardo.html">Maggiori info</a>
+        </article>
+
+        <article class="card teamCard">
+          <div class="imgContainer teamAvatarContainer">
+            <img
+              class="imgItself"
+              src="../assets/images/davide-braghi.png"
+              alt="Illustrazione 3D di Davide Braghi"
+            />
+          </div>
           <h3>Davide Braghi</h3>
           <p class="cardSubtitle">Full Stack Developer</p>
-          <div class="imgContainer">
-            <img class="imgItself" src="../assets/images/images.jpg" alt="" />
-          </div>
           <p class="cardDescription">
-            Specializzato nello sviluppo di applicazioni web.
-Lavora con tecnologie come Java, Spring Boot, React e PostgreSQL per progettare API REST e realizzare interfacce utente dinamiche.
+            Lavora tra backend e frontend con tecnologie come Java, Spring Boot,
+            React e PostgreSQL per costruire applicazioni complete.
           </p>
-          <a class="btnAdditionalInfo" href="DavideBraghi.html">Maggiori info</a></button>
-        </div>
+          <a class="btnAdditionalInfo" href="./DavideBraghi.html">Maggiori info</a>
+        </article>
       </section>
     </main>
-    <footer>
-      <p>
-        All right reserved to ProDeveloperGroup &copy;
-        <strong id="year"></strong>
+    <footer class="siteFooter">
+      <div class="footerGrid">
+        <section class="footerBrand">
+          <h2>CodeNexa</h2>
+          <p>Soluzioni web creative per idee digitali che crescono.</p>
+        </section>
+
+        <nav class="footerMenu" aria-label="Menu footer">
+          <h3>Menu</h3>
+          <a href="../index.html">Homepage</a>
+          <a href="./Info.html">Info</a>
+          <a href="./Prodotti.html">Prodotti</a>
+          <a href="./Developer.html">Developer</a>
+        </nav>
+
+        <section class="footerContacts">
+          <h3>Contatti</h3>
+          <p>Via Roma 123, Milano</p>
+          <p>+39 333 1234567</p>
+          <p>info@codenexa.it</p>
+        </section>
+      </div>
+
+      <p class="footerCopyright">
+        All right reserved to CodeNexa &copy; <strong id="year"></strong>
       </p>
     </footer>
+    <script src="../assets/scripts/footer.js"></script>
   </body>
 </html>

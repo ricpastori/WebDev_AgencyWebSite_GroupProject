@@ -1,9 +1,65 @@
-main {
+.developerMain {
   height: 100%;
+}
+
+.developerIntro {
+  margin: 0 auto var(--space-xl);
+  max-width: 840px;
+  text-align: center;
+}
+
+.developerIntro .introKicker {
+  margin: 0 0 var(--space-md);
+  color: var(--color-white);
+  font-weight: 900;
+  font-size: var(--font-size-base);
+  text-shadow: var(--shadow-text-kicker);
+  text-transform: uppercase;
+}
+
+.developerIntro h1 {
+  margin: 0;
+  color: var(--color-navy);
+  font-size: var(--font-size-hero-title);
+  line-height: 0.95;
+  text-shadow: none;
+  text-transform: uppercase;
+}
+
+.developerIntro > p:last-child {
+  margin: var(--space-lg) auto 0;
+  max-width: 680px;
+  color: var(--color-text-dark);
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.4;
+  text-shadow: none;
 }
 
 .cardSection {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.teamCard {
+  text-align: left;
+}
+
+.teamAvatarContainer {
+  border-radius: var(--radius-circle);
+  background: var(--color-surface-soft);
+  aspect-ratio: 1;
+  width: min(100%, 210px);
+  height: auto;
+}
+
+.teamAvatarContainer .imgItself {
+  transform: translateY(8px);
+  filter: var(--shadow-avatar);
+  object-fit: contain;
+}
+
+.teamCard .btnAdditionalInfo {
+  align-self: flex-start;
 }
 
 @media (max-width: 768px) {
