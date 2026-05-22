@@ -95,6 +95,9 @@ main > p {
 }
 
 .btnAdditionalInfo {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
   margin-top: 20px;
   background-color: #ff7e5f;
   color: white;
