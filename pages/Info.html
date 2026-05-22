@@ -10,17 +10,17 @@
 
   <body>
     <header>
-      <nav id="navContainer">
-        <a class="agencyBrand" href="../index.html">CodeNexa</a>
+      <nav id="navContainer" aria-label="Menu principale">
+        <a class="agencyBrand" href="../index.html" aria-label="Torna alla homepage di CodeNexa">CodeNexa</a>
         <div class="headerMenu">
-          <input class="menuCheckbox" type="checkbox" id="main-menu-toggle" />
+          <input class="menuCheckbox" type="checkbox" id="main-menu-toggle" aria-controls="main-menu" />
           <label class="menuToggle" for="main-menu-toggle" aria-label="Apri il menu principale">
             <span></span>
             <span></span>
             <span></span>
             <span class="srOnly">Menu</span>
           </label>
-          <div class="navLinks" aria-label="Menu principale">
+          <div class="navLinks" id="main-menu">
             <a href="./Info.html">Info</a>
             <a href="./Prodotti.html">Prodotti</a>
             <a href="./Developer.html">Developer</a>
@@ -34,11 +34,16 @@
           <h2>Contattaci</h2>
 
           <form id="form">
-            <input type="text" placeholder="Nome" />
-            <input type="email" placeholder="Email" />
-            <textarea placeholder="Scrivi il tuo messaggio"></textarea>
+            <input type="text" placeholder="Nome" aria-label="Nome" />
+            <input type="email" placeholder="Email" aria-label="Email" />
+            <textarea
+              placeholder="Scrivi il tuo messaggio"
+              aria-label="Messaggio"
+            ></textarea>
 
-            <button type="submit">INVIA</button>
+            <button type="submit" aria-label="Invia messaggio di contatto">
+              INVIA
+            </button>
           </form>
         </div>
 
@@ -61,7 +66,7 @@
             <img
               class="infoImgItself"
               src="../assets/images/info.png"
-              alt="contact image"
+              alt="Illustrazione della pagina contatti di CodeNexa"
             />
           </div>
         </div>

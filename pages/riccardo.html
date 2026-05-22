@@ -10,17 +10,17 @@
 
   <body>
     <header>
-      <nav id="navContainer">
-        <a class="agencyBrand" href="../index.html">CodeNexa</a>
+      <nav id="navContainer" aria-label="Menu principale">
+        <a class="agencyBrand" href="../index.html" aria-label="Torna alla homepage di CodeNexa">CodeNexa</a>
         <div class="headerMenu">
-          <input class="menuCheckbox" type="checkbox" id="main-menu-toggle" />
+          <input class="menuCheckbox" type="checkbox" id="main-menu-toggle" aria-controls="main-menu" />
           <label class="menuToggle" for="main-menu-toggle" aria-label="Apri il menu principale">
             <span></span>
             <span></span>
             <span></span>
             <span class="srOnly">Menu</span>
           </label>
-          <div class="navLinks" aria-label="Menu principale">
+          <div class="navLinks" id="main-menu">
             <a href="./Info.html">Info</a>
             <a href="./Prodotti.html">Prodotti</a>
             <a href="./Developer.html">Developer</a>
@@ -47,7 +47,7 @@
           <div class="followBar">
             <h2>Follow On</h2>
             <div class="socialLinks">
-              <a href="https://www.linkedin.com/in/riccardo-pastori/" aria-label="LinkedIn" target="_blank">
+              <a href="https://www.linkedin.com/in/riccardo-pastori/" aria-label="Profilo LinkedIn di Riccardo Pastori" target="_blank">
                 <svg
                   width="20"
                   height="20"
@@ -61,7 +61,7 @@
                   />
                 </svg>
               </a>
-              <a href="https://github.com/ricpastori" aria-label="GitHub" target="_blank">
+              <a href="https://github.com/ricpastori" aria-label="Profilo GitHub di Riccardo Pastori" target="_blank">
                 <svg
                   width="20"
                   height="20"
@@ -85,8 +85,8 @@
           <p class="introLead">Here is who I am &amp; what I do.</p>
 
           <div class="portfolioActions">
-            <a class="portfolioBtn primary" href="../assets/pdf/RiccardoPastoriCV2026.pdf" target="_blank">Resume</a>
-            <a class="portfolioBtn" href="https://github.com/ricpastori" aria-label="GitHub" target="_blank">Projects</a>
+            <a class="portfolioBtn primary" href="../assets/pdf/RiccardoPastoriCV2026.pdf" aria-label="Apri il CV di Riccardo Pastori" target="_blank">Resume</a>
+            <a class="portfolioBtn" href="https://github.com/ricpastori" aria-label="Apri i progetti GitHub di Riccardo Pastori" target="_blank">Projects</a>
           </div>
 
           <p class="introText">

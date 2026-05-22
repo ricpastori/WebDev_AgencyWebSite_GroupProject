@@ -11,17 +11,17 @@
   <body>
     <!-- BLOCCO 1: Header e menu di navigazione -->
     <header>
-      <nav id="navContainer">
-        <a class="agencyBrand" href="./index.html">CodeNexa</a>
+      <nav id="navContainer" aria-label="Menu principale">
+        <a class="agencyBrand" href="./index.html" aria-label="Torna alla homepage di CodeNexa">CodeNexa</a>
         <div class="headerMenu">
-          <input class="menuCheckbox" type="checkbox" id="main-menu-toggle" />
+          <input class="menuCheckbox" type="checkbox" id="main-menu-toggle" aria-controls="main-menu" />
           <label class="menuToggle" for="main-menu-toggle" aria-label="Apri il menu principale">
             <span></span>
             <span></span>
             <span></span>
             <span class="srOnly">Menu</span>
           </label>
-          <div class="navLinks" aria-label="Menu principale">
+          <div class="navLinks" id="main-menu">
             <a href="./pages/Info.html">Info</a>
             <a href="./pages/Prodotti.html">Prodotti</a>
             <a href="./pages/Developer.html">Developer</a>
@@ -45,7 +45,7 @@
         <img
           class="svgItself"
           src="./assets/icons/code dark.svg"
-          alt="company animated img"
+          alt="Logo illustrato di CodeNexa"
         />
       </section>
       <!-- BLOCCO 3: Presentazione azienda -->

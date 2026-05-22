@@ -10,17 +10,17 @@
 
   <body>
     <header>
-      <nav id="navContainer">
-        <a class="agencyBrand" href="../index.html">CodeNexa</a>
+      <nav id="navContainer" aria-label="Menu principale">
+        <a class="agencyBrand" href="../index.html" aria-label="Torna alla homepage di CodeNexa">CodeNexa</a>
         <div class="headerMenu">
-          <input class="menuCheckbox" type="checkbox" id="main-menu-toggle" />
+          <input class="menuCheckbox" type="checkbox" id="main-menu-toggle" aria-controls="main-menu" />
           <label class="menuToggle" for="main-menu-toggle" aria-label="Apri il menu principale">
             <span></span>
             <span></span>
             <span></span>
             <span class="srOnly">Menu</span>
           </label>
-          <div class="navLinks" aria-label="Menu principale">
+          <div class="navLinks" id="main-menu">
             <a href="./Info.html">Info</a>
             <a href="./Prodotti.html">Prodotti</a>
             <a href="./Developer.html">Developer</a>
@@ -31,12 +31,12 @@
 
     <main class="profileMain">
       <section class="portfolioHero" id="about">
-        <article class="profileCard" aria-label="Scheda profilo di Riccardo">
+        <article class="profileCard" aria-label="Scheda profilo di Davide Braghi">
           <div class="avatarPanel">
             <div class="avatarWrap">
               <img
                 src="../assets/images/davide-braghi.png"
-                alt="Illustrazione 3D del profilo di Riccardo Pastori"
+                alt="Illustrazione 3D del profilo di Davide Braghi"
               />
             </div>
             <h1>Davide Braghi</h1>
@@ -49,7 +49,7 @@
             <div class="socialLinks">
               <a
                 href="https://www.linkedin.com/in/davide-braghi-1991-pc"
-                aria-label="LinkedIn"
+                aria-label="Profilo LinkedIn di Davide Braghi"
               >
                 <svg
                   width="20"
@@ -64,7 +64,7 @@
                   />
                 </svg>
               </a>
-              <a href="https://github.com/Dade1991" aria-label="GitHub">
+              <a href="https://github.com/Dade1991" aria-label="Profilo GitHub di Davide Braghi">
                 <svg
                   width="20"
                   height="20"
@@ -90,10 +90,12 @@
           <div class="portfolioActions">
             <a
               class="portfolioBtn primary"
-              href="../assets/pdf/DavideBraghiCV2026.pdf" target="_blank"
+              href="../assets/pdf/DavideBraghiCV2026.pdf"
+              aria-label="Apri il CV di Davide Braghi"
+              target="_blank"
               >Resume</a
             >
-            <a class="portfolioBtn" href="https://github.com/Dade1991" target="_blank">Projects</a>
+            <a class="portfolioBtn" href="https://github.com/Dade1991" aria-label="Apri i progetti GitHub di Davide Braghi" target="_blank">Projects</a>
           </div>
 
           <p class="introText">

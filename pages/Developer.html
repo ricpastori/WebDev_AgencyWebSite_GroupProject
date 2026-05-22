@@ -9,17 +9,17 @@
   </head>
   <body>
     <header>
-      <nav id="navContainer">
-        <a class="agencyBrand" href="../index.html">CodeNexa</a>
+      <nav id="navContainer" aria-label="Menu principale">
+        <a class="agencyBrand" href="../index.html" aria-label="Torna alla homepage di CodeNexa">CodeNexa</a>
         <div class="headerMenu">
-          <input class="menuCheckbox" type="checkbox" id="main-menu-toggle" />
+          <input class="menuCheckbox" type="checkbox" id="main-menu-toggle" aria-controls="main-menu" />
           <label class="menuToggle" for="main-menu-toggle" aria-label="Apri il menu principale">
             <span></span>
             <span></span>
             <span></span>
             <span class="srOnly">Menu</span>
           </label>
-          <div class="navLinks" aria-label="Menu principale">
+          <div class="navLinks" id="main-menu">
             <a href="./Info.html">Info</a>
             <a href="./Prodotti.html">Prodotti</a>
             <a href="./Developer.html">Developer</a>
@@ -52,7 +52,13 @@
             Sviluppa applicazioni web, desktop e mobile traducendo i requisiti
             del progetto in soluzioni digitali efficienti, veloci e integrate.
           </p>
-          <a class="btnAdditionalInfo" href="./marianna.html">Maggiori info</a>
+          <a
+            class="btnAdditionalInfo"
+            href="./marianna.html"
+            aria-label="Apri il profilo di Marianna Masala"
+          >
+            Maggiori info
+          </a>
         </article>
 
         <article class="card teamCard">
@@ -69,7 +75,13 @@
             Cura interfacce intuitive e codice pulito, con attenzione alla
             struttura, all'usabilità e alla resa visiva delle pagine.
           </p>
-          <a class="btnAdditionalInfo" href="./Donnarumma.html">Maggiori info</a>
+          <a
+            class="btnAdditionalInfo"
+            href="./Donnarumma.html"
+            aria-label="Apri il profilo di Davide Donnarumma"
+          >
+            Maggiori info
+          </a>
         </article>
 
         <article class="card teamCard">
@@ -86,7 +98,13 @@
             Coordina idee, priorità e interfacce per trasformare concept e
             bisogni utente in pagine chiare, coerenti e facili da navigare.
           </p>
-          <a class="btnAdditionalInfo" href="./riccardo.html">Maggiori info</a>
+          <a
+            class="btnAdditionalInfo"
+            href="./riccardo.html"
+            aria-label="Apri il profilo di Riccardo Pastori"
+          >
+            Maggiori info
+          </a>
         </article>
 
         <article class="card teamCard">
@@ -103,7 +121,13 @@
             Lavora tra backend e frontend con tecnologie come Java, Spring Boot,
             React e PostgreSQL per costruire applicazioni complete.
           </p>
-          <a class="btnAdditionalInfo" href="./DavideBraghi.html">Maggiori info</a>
+          <a
+            class="btnAdditionalInfo"
+            href="./DavideBraghi.html"
+            aria-label="Apri il profilo di Davide Braghi"
+          >
+            Maggiori info
+          </a>
         </article>
       </section>
     </main>

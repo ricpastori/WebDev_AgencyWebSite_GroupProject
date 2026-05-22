@@ -9,17 +9,17 @@
   </head>
   <body>
     <header>
-      <nav id="navContainer">
-        <a class="agencyBrand" href="../index.html">CodeNexa</a>
+      <nav id="navContainer" aria-label="Menu principale">
+        <a class="agencyBrand" href="../index.html" aria-label="Torna alla homepage di CodeNexa">CodeNexa</a>
         <div class="headerMenu">
-          <input class="menuCheckbox" type="checkbox" id="main-menu-toggle" />
+          <input class="menuCheckbox" type="checkbox" id="main-menu-toggle" aria-controls="main-menu" />
           <label class="menuToggle" for="main-menu-toggle" aria-label="Apri il menu principale">
             <span></span>
             <span></span>
             <span></span>
             <span class="srOnly">Menu</span>
           </label>
-          <div class="navLinks" aria-label="Menu principale">
+          <div class="navLinks" id="main-menu">
             <a href="./Info.html">Info</a>
             <a href="./Prodotti.html">Prodotti</a>
             <a href="./Developer.html">Developer</a>
@@ -35,13 +35,23 @@
           <h3>Hosting Dev Ultra Veloce</h3>
           <p class="cardSubtitle">Performance senza compromessi</p>
           <div class="imgContainer">
-            <img class="imgItself" src="../assets/images/images.jpg" alt="" />
+            <img
+              class="imgItself"
+              src="../assets/images/images.jpg"
+              alt="Illustrazione di sviluppo web per hosting veloce"
+            />
           </div>
           <p class="cardDescription">
             Servizio di hosting ottimizzato per applicazioni web moderne, con
             deploy rapidi, scalabilità automatica e uptime garantito.
           </p>
-          <button class="btnAdditionalInfo">Maggiori info</button>
+          <a
+            class="btnAdditionalInfo"
+            href="./Info.html"
+            aria-label="Richiedi maggiori informazioni su Hosting Dev Ultra Veloce"
+          >
+            Maggiori info
+          </a>
         </div>
         <!-- Card -->
         <div class="card">
@@ -51,14 +61,20 @@
             <img
               class="imgItself"
               src="../assets/images/product development.jpg"
-              alt=""
+              alt="Team al lavoro su un progetto di sviluppo prodotto"
             />
           </div>
           <p class="cardDescription">
             Piattaforma che semplifica la creazione di API REST e GraphQL con
             gestione automatica di sicurezza e documentazione.
           </p>
-          <button class="btnAdditionalInfo">Maggiori info</button>
+          <a
+            class="btnAdditionalInfo"
+            href="./Info.html"
+            aria-label="Richiedi maggiori informazioni su API Builder Pro"
+          >
+            Maggiori info
+          </a>
         </div>
         <!-- Card -->
         <div class="card">
@@ -68,14 +84,20 @@
             <img
               class="imgItself"
               src="../assets/images/Product-developer-Engineer (1).jpg"
-              alt=""
+              alt="Product developer engineer durante attivita di debugging"
             />
           </div>
           <p class="cardDescription">
             Suite avanzata di strumenti per il debugging in tempo reale, con
             monitoraggio degli errori e analisi delle performance.
           </p>
-          <button class="btnAdditionalInfo">Maggiori info</button>
+          <a
+            class="btnAdditionalInfo"
+            href="./Info.html"
+            aria-label="Richiedi maggiori informazioni su Debug Toolkit"
+          >
+            Maggiori info
+          </a>
         </div>
         <!-- Card -->
         <div class="card">
@@ -85,66 +107,112 @@
             <img
               class="imgItself"
               src="../assets/images/Web-Design-Development.jpg"
-              alt=""
+              alt="Concept di web design e sviluppo interfacce"
             />
           </div>
           <p class="cardDescription">
             Raccolta di componenti riutilizzabili per React e altre librerie,
             completamente personalizzabili e pronti per la produzione.
           </p>
-          <button class="btnAdditionalInfo">Maggiori info</button>
+          <a
+            class="btnAdditionalInfo"
+            href="./Info.html"
+            aria-label="Richiedi maggiori informazioni su UI Component Library"
+          >
+            Maggiori info
+          </a>
         </div>
         <!-- Card -->
         <div class="card">
           <h3>DevOps Cloud Sync</h3>
           <p class="cardSubtitle">Automazione continua</p>
           <div class="imgContainer">
-            <img class="imgItself" src="../assets/images/images (1).jpg" alt="" />
+            <img
+              class="imgItself"
+              src="../assets/images/images (1).jpg"
+              alt="Dashboard e strumenti per automazione DevOps"
+            />
           </div>
           <p class="cardDescription">
             Sistema CI/CD integrato che automatizza build, test e deploy su
             ambienti cloud in modo semplice e affidabile.
           </p>
-          <button class="btnAdditionalInfo">Maggiori info</button>
+          <a
+            class="btnAdditionalInfo"
+            href="./Info.html"
+            aria-label="Richiedi maggiori informazioni su DevOps Cloud Sync"
+          >
+            Maggiori info
+          </a>
         </div>
         <!-- Card -->
         <div class="card">
           <h3>Code Snippet Hub</h3>
           <p class="cardSubtitle">Riutilizza il tuo codice</p>
           <div class="imgContainer">
-            <img class="imgItself" src="../assets/images/automation-testing-abstract-concept-vector-illustration-software-testing-solution-development-process-automation-website-developer-.avif" alt="" />
+            <img
+              class="imgItself"
+              src="../assets/images/automation-testing-abstract-concept-vector-illustration-software-testing-solution-development-process-automation-website-developer-.avif"
+              alt="Illustrazione astratta di testing automatico e sviluppo software"
+            />
           </div>
           <p class="cardDescription">
             Archivio intelligente per salvare, organizzare e condividere snippet
             di codice tra team e progetti.
           </p>
-          <button class="btnAdditionalInfo">Maggiori info</button>
+          <a
+            class="btnAdditionalInfo"
+            href="./Info.html"
+            aria-label="Richiedi maggiori informazioni su Code Snippet Hub"
+          >
+            Maggiori info
+          </a>
         </div>
         <!-- Card -->
         <div class="card">
           <h3>Database Smart Manager</h3>
           <p class="cardSubtitle">Controllo totale sui dati</p>
           <div class="imgContainer">
-            <img class="imgItself" src="../assets/images/lampadina.jpg" alt="" />
+            <img
+              class="imgItself"
+              src="../assets/images/lampadina.jpg"
+              alt="Lampadina accesa come simbolo di gestione intelligente dei dati"
+            />
           </div>
           <p class="cardDescription">
             Interfaccia intuitiva per gestire database SQL e NoSQL, con query
             builder visuale e backup automatici.
           </p>
-          <button class="btnAdditionalInfo">Maggiori info</button>
+          <a
+            class="btnAdditionalInfo"
+            href="./Info.html"
+            aria-label="Richiedi maggiori informazioni su Database Smart Manager"
+          >
+            Maggiori info
+          </a>
         </div>
         <!-- Card -->
         <div class="card">
           <h3>Auth Secure Kit</h3>
           <p class="cardSubtitle">Sicurezza pronta all’uso</p>
           <div class="imgContainer">
-            <img class="imgItself" src="../assets/images/images.jpg" alt="" />
+            <img
+              class="imgItself"
+              src="../assets/images/images.jpg"
+              alt="Illustrazione di sicurezza e sviluppo web"
+            />
           </div>
           <p class="cardDescription">
             Soluzione completa per autenticazione e autorizzazione con supporto
             OAuth, JWT e gestione utenti avanzata.
           </p>
-          <button class="btnAdditionalInfo">Maggiori info</button>
+          <a
+            class="btnAdditionalInfo"
+            href="./Info.html"
+            aria-label="Richiedi maggiori informazioni su Auth Secure Kit"
+          >
+            Maggiori info
+          </a>
         </div>
       </section>
     </main>
