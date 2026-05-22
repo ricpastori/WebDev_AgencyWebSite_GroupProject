@@ -1,7 +1,7 @@
 main {
-  padding: 60px 0px;
   display: flex;
   flex-direction: column;
+  padding: var(--space-3xl) 0;
   text-align: center;
 }
 
@@ -9,39 +9,35 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
-  color: white;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
+  color: var(--color-white);
+  text-align: center;
 }
 
-/* SECONDA SEZIONE */
 #presentazione {
+  color: var(--color-white);
   text-align: center;
-  color: white;
 }
 
 #presentazione h2 {
-  margin-bottom: 20px;
+  margin-bottom: var(--space-lg);
 }
 
-/* SEZIONE SVG */
-
 #svgContainer {
-  margin: 20px auto;
-  width: 250px;
-  overflow: hidden;
-  background-position: center;
-  justify-content: center;
-  align-items: center;
   display: flex;
   flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: var(--space-lg) auto;
+  width: var(--card-image-width);
+  background-position: center;
 }
 
 .svgItself {
   max-width: 100%;
   height: auto;
   background-repeat: no-repeat;
-  object-fit: cover;
   object-fit: contain;
 }
