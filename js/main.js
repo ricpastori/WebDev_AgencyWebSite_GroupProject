@@ -1,35 +1,39 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("form")
 
-    const form = document.getElementById("form");
+  form.addEventListener("submit", function (e) {
+    e.preventDefault()
 
-    form.addEventListener("submit", function (e) {
-        e.preventDefault();
+    const inputs = form.querySelectorAll("input, textarea")
 
-        const inputs = form.querySelectorAll("input, textarea");
+    const nome = inputs[0].value.trim()
+    const email = inputs[1].value.trim()
+    const messaggio = inputs[2].value.trim()
 
-        const nome = inputs[0].value.trim();
-        const email = inputs[1].value.trim();
-        const messaggio = inputs[2].value.trim();
+    // controllo campi vuoti
+    if (!nome || !email || !messaggio) {
+      alert("Compila tutti i campi!")
+      return
+    }
 
-        // controllo campi vuoti
-        if (!nome || !email || !messaggio) {
-            alert("Compila tutti i campi!");
-            return;
-        }
+    // validazione email base
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
-        // validazione email base
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert("Email non valida!")
+      return
+    }
 
-        if (!emailRegex.test(email)) {
-            alert("Email non valida!");
-            return;
-        }
+    // successo
+    alert("Messaggio inviato con successo!")
 
-        // successo
-        alert("Messaggio inviato con successo!");
+    // reset form
+    form.reset()
+  })
+})
 
-        // reset form
-        form.reset();
-    });
+// Footer dinamico
 
-});
+let dataYearFooter = document.getElementById("year")
+
+dataYearFooter.textContent = new Date().getFullYear()
